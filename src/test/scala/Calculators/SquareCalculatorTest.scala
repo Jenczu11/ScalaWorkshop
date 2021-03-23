@@ -4,7 +4,12 @@ import org.scalatest.matchers.should.Matchers.{convertToAnyShouldWrapper, equal}
 
 class SquareCalculatorTest extends PropCustomTest {
 
-  val examples = Table(("Input","Result"),(1,1),(2,4),(3,9))
+  val examples = Table(
+    ("Input","Result"),
+    (1,1),
+    (2,4),
+    (3,9)
+  )
 
   property("square property") {
     forAll(examples) { (Input: Int, Result: Int) =>
@@ -13,7 +18,8 @@ class SquareCalculatorTest extends PropCustomTest {
       Given("input " + Input)
       When("squared")
       Then("result should equal " + Result)
-      assert(calc.square(Input) === Result)
+//      You can go with classic assert or smth should equal (this)
+//      assert(calc.square(Input) === Result)
       calc.square(Input) should equal (Result)
     }
   }
