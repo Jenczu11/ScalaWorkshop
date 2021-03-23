@@ -1,4 +1,4 @@
-name := "WorkshopTestsv2"
+name := "ScalaWorkshop_Tests"
 
 version := "0.1"
 
