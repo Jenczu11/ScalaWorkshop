@@ -1,6 +1,9 @@
 *.class
 *.log
-
+target/
+project/
+.idea/
+.bsp/
 # sbt specific
 .cache/
 .history/
