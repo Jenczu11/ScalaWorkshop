@@ -10,19 +10,20 @@ object Person {
 
   // a one-arg constructor
   def apply(name: String): Person = {
-    var p = new Person
+    val p = new Person
     p.name = name
     p
   }
 
   // a two-arg constructor
   def apply(name: String, age: Int): Person = {
-    var p = new Person
+    val p = new Person
     p.name = name
     p.age = age
     p
   }
 
+  // de-constructor
   def unapply(p: Person): String = s"${p.name}, ${p.age}"
 
 }
