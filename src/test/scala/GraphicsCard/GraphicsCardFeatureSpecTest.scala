@@ -1,13 +1,14 @@
 package GraphicsCard
 
-import org.scalatest.{FeatureSpec, _}
+import org.scalatest.GivenWhenThen
+import org.scalatest.featurespec.AnyFeatureSpec
 
-class GraphicsCardFeatureSpecTest extends FeatureSpec with GivenWhenThen {
+class GraphicsCardFeatureSpecTest extends AnyFeatureSpec with GivenWhenThen {
 
   info("As a gamer I want to buy graphics card")
 
-  feature("No graphics cards") {
-    scenario("User tries to buy graphics card when stock is empty") {
+  Feature("No graphics cards") {
+    Scenario("User tries to buy graphics card when stock is empty") {
 
       Given("An empty stock")
       val graphicsCardShop = new GraphicsCardShop()

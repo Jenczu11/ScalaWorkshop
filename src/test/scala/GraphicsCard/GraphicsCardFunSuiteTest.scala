@@ -1,8 +1,8 @@
 package GraphicsCard
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-class GraphicsCardFunSuiteTest extends FunSuite {
+class GraphicsCardFunSuiteTest extends AnyFunSuite {
 
   test("A GraphicsShop should have 0 cards on init") {
     val graphicsCardShop = new GraphicsCardShop()

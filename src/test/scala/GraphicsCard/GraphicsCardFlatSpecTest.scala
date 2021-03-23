@@ -1,8 +1,8 @@
 package GraphicsCard
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
 
-class GraphicsCardFlatSpecTest extends FlatSpec {
+class GraphicsCardFlatSpecTest extends AnyFlatSpec {
   markup {
     """
       Tutaj definujemy FlatSpecTest dla shopu

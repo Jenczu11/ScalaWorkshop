@@ -1,5 +1,7 @@
 package Calculators
-import org.scalatest.Matchers.{convertToAnyShouldWrapper, equal}
+
+import org.scalatest.matchers.should.Matchers.{convertToAnyShouldWrapper, equal}
+
 class SquareCalculatorTest extends PropCustomTest {
 
   val examples = Table(("Input","Result"),(1,1),(2,4),(3,9))
@@ -7,6 +9,7 @@ class SquareCalculatorTest extends PropCustomTest {
   property("square property") {
     forAll(examples) { (Input: Int, Result: Int) =>
       val calc = new SquareCalculator()
+      info("----------------")
       Given("input " + Input)
       When("squared")
       Then("result should equal " + Result)

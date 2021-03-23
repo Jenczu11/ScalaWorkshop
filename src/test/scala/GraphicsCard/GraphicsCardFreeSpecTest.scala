@@ -1,8 +1,8 @@
 package GraphicsCard
 
-import org.scalatest.FreeSpec
+import org.scalatest.freespec.AnyFreeSpec
 
-class GraphicsCardFreeSpecTest extends FreeSpec {
+class GraphicsCardFreeSpecTest extends AnyFreeSpec {
   val graphicsCardShop = new GraphicsCardShop()
 
   "A GraphicsCardShop" - {

@@ -1,8 +1,9 @@
 package Calculators
 
-import org.scalatest.{GivenWhenThen, PropSpec}
+import org.scalatest.{GivenWhenThen}
 import org.scalatest.prop.TableDrivenPropertyChecks
+import org.scalatest.propspec.AnyPropSpec
 
-abstract class PropCustomTest extends PropSpec with TableDrivenPropertyChecks with GivenWhenThen {
+abstract class PropCustomTest extends AnyPropSpec with TableDrivenPropertyChecks with GivenWhenThen {
 
 }

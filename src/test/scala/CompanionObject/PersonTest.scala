@@ -1,8 +1,8 @@
 package CompanionObject
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-class PersonTest extends FunSuite {
+class PersonTest extends AnyFunSuite {
 
   test("test apply and without apply") {
     val p = Person("Fred Flinstone")
