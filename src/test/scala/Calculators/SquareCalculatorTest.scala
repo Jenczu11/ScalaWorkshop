@@ -1,10 +1,11 @@
 package Calculators
 
 import org.scalatest.matchers.should.Matchers.{convertToAnyShouldWrapper, equal}
+import org.scalatest.prop.TableFor2
 
 class SquareCalculatorTest extends PropCustomTest {
 
-  val examples = Table(
+  val examples: TableFor2[Int, Int] = Table(
     ("Input","Result"),
     (1,1),
     (2,4),
