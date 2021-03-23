@@ -1,4 +1,5 @@
-import GraphicsCard.GraphicsCardShop
+package GraphicsCard
+
 import org.scalatest.{FeatureSpec, _}
 
 class GraphicsCardFeatureSpecTest extends FeatureSpec with GivenWhenThen {

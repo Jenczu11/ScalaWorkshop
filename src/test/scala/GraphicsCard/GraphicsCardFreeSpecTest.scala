@@ -1,4 +1,5 @@
-import GraphicsCard.GraphicsCardShop
+package GraphicsCard
+
 import org.scalatest.FreeSpec
 
 class GraphicsCardFreeSpecTest extends FreeSpec {
