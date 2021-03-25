@@ -1,5 +1,3 @@
-package GraphicsCard
-
 import org.scalatest.wordspec.AnyWordSpec
 
 class WordSpec extends AnyWordSpec {

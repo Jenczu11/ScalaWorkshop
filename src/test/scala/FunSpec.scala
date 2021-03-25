@@ -1,5 +1,3 @@
-package GraphicsCard
-
 import org.scalatest.funspec.AnyFunSpec
 
 class FunSpec extends AnyFunSpec {
